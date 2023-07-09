@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Booking Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Hotel Booking Website</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Rooms</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Book a Room</h2>
+			<form>
+				<label for="check-in-date">Check-in Date:</label>
+				<input type="date" id="check-in-date" name="check-in-date" required>
+
+				<label for="check-out-date">Check-out Date:</label>
+				<input type="date" id="check-out-date" name="check-out-date" required>
+
+				<label for="room-type">Room Type:</label>
+				<select id="room-type" name="room-type" required>
+					<option value="">Select Room Type</option>
+					<option value="standard">Standard</option>
+					<option value="deluxe">Deluxe</option>
+					<option value="suite">Suite</option>
+				</select>
+
+				<label for="number-of-guests">Number of Guests:</label>
+				<input type="number" id="number-of-guests" name="number-of-guests" min="1" max="10" required>
+
+				<button type="submit">Book Now</button>
+			</form>
+		</section>
+		<section>
+			<h2>Featured Rooms</h2>
+			<div class="room-card">
+				<img src="room1.jpg" alt="Room 1">
+				<h3>Standard Room</h3>
+				<p>Starting from $100/night</p>
+				<a href="#">Book Now</a>
+			</div>
+			<div class="room-card">
+				<img src="room2.jpg" alt="Room 2">
+				<h3>Deluxe Room</h3>
+				<p>Starting from $150/night</p>
+				<a href="#">Book Now</a>
+			</div>
+			<div class="room-card">
+				<img src="room3.jpg" alt="Room 3">
+				<h3>Suite Room</h3>
+				<p>Starting from $200/night</p>
+				<a href="#">Book Now</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Hotel Booking Website. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>
