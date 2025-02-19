@@ -4,96 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Log in</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Luxury Login</title>
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-image: url("stunning\ overall\ backdrop.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            top: 0;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: goldenrod;
+            font-size: 18px;
+        }
+        .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            width: 350px;
+            margin-top: 80px;
+        }
+        h2 {
+            color: goldenrod;
+        }
+        .input-box {
+            position: relative;
+            margin: 20px 0;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: goldenrod;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #c4103d;
+            color: white;
+        }
+        .social-icons a {
+            margin: 10px;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="log in.html" class = "button">Home</a>
-            <a href="About.html" class="button">About</a>
-            <a href="services.html" class="button" >Services</a>
-            <a href="contactus.html" class = "button">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
         </nav>
         <form action="#" class="search-bar">
             <input type="text" placeholder="Search...">
             <button type="submit"><i class='bx bx-search-alt'></i></button>
         </form>
     </header>
-    <div class="background"></div>
     <div class="container">
-        <div class="content">
-            <h2><i class='bx bxl-firebase bx-flashing bx-rotate-90'></i>LUXURNET</h2>
-            <div class="text-sci">
-                <h2>WELCOME<br><span>To LUXURNET, HOME OF LUXURY </span></h2>
-                
-                <div class="social-icons">
-                    <a href="https://api.whatsapp.com/send?phone=254115541356"><i class='bx bxl-whatsapp' style='color:#139e05'></i></a>
-                    <a href="#"><i class='bx bxl-github' style='color:#080808'></i></a>
-                    <a href="mailto:kelmasanga@gmail.com"><i class='bx bx-envelope' style='color:#ec0808'></i></a>
-                    <a href="#"><i class='bx bxs-school' style='color:#0e0e0e'></i></a>
-                </div>
+        <h2>LUXURNET</h2>
+        <h3>Log In</h3>
+        <form action="#">
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
             </div>
-        </div>
-        <div class="logreg-box">
-            <div class="form-box login">
-                <form action="#">
-                    <h2>Log In</h2>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bx-envelope'></i></span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bx-lock-alt'></i></span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-forgot">
-                        <label>
-                            <input type="checkbox"> Remember me?
-                        </label>
-                        <a href="#">Forgot password</a>
-                    </div>
-                    <button type="submit" class="btn">Sign In</button>
-                    <div class="login-register">
-                        <p>Don't have an account?<a href="#" class="register-link">Sign up</a></p>
-                    </div>
-                </form>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
             </div>
-            <div class="form-box register">
-                <form action="#">
-                    <h2>Sign Up</h2>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bx-user'></i></span>
-                        <input type="text" required>
-                        <label>Name</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bx-envelope'></i></span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bx-lock-alt'></i></span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-forgot">
-                        <label>
-                            <input type="checkbox"> I agree to the terms & conditions
-                        </label>
-                        <a href="#">Forgot password</a>
-                    </div>
-                    <button type="submit" class="btn">Sign Up</button>
-                    <div class="login-register">
-                        <p>Already have an account?<a href="#" class="login-link">Sign in</a></p>
-                    </div>
-                </form>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me?</label>
+                <a href="#">Forgot password?</a>
             </div>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send?phone=254115541356"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/kelmasanga"><i class='bx bxl-github'></i></a>
+            <a href="mailto:kelmasanga@gmail.com"><i class='bx bx-envelope'></i></a>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
