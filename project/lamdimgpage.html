@@ -3,95 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Luxury Home Management</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Luxury Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            background-color: #121212;
+            color: #fff;
             background-image: url("landing\ page\ backdrop.webp");
         }
-        header {
-            background: url('background.jpg') no-repeat center center/cover;
+        .hero {
+            background: url('luxury-hotel.jpg') no-repeat center center/cover;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        }
-        h1, h2 {
-            color: goldenrod;
-            font-size: 2.5rem;
-        }
-        .about {
-            max-width: 600px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
+            text-align: center;
             color: white;
-            font-size: 1.2rem;
         }
-        .button {
-            display: inline-block;
-            background: goldenrod;
-            color: black;
-            padding: 15px 25px;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .logo span {
+            color: #d4af37;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        ul li {
+            margin: 0 15px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        ul li a:hover {
+            color: #d4af37;
+        }
+        .btn {
+            background: #d4af37;
+            color: white;
+            padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
             transition: 0.3s;
-            font-size: 1.2rem;
         }
-        .button:hover {
-            background: #c4103d;
-            color: white;
+        .btn:hover {
+            background: #b79529;
         }
-        .social-icons a {
-            margin: 10px;
-            color: white;
-            font-size: 1.5rem;
-            text-decoration: none;
+        .services {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #1e1e1e;
+        }
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+            max-width: 300px;
+            transition: 0.3s;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
         }
         footer {
-            margin-top: auto;
-            padding: 20px;
-            background: #222;
-            color: white;
             text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>LUXURNET</h1>
-        <h2>HOME OF LUXURY</h2>
-        <div class="about">
-            <p>
-                LUXURNET is a premier online luxury management platform, connecting enthusiasts with high-end brands.
-                Our curated selection, exclusive access, and personalized recommendations redefine the luxury experience.
-            </p>
+    <header class="hero">
+        <nav>
+            <h1 class="logo">LUXURY<span>Stay</span></h1>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#book" class="btn">Book Now</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h2>Experience Luxury & Comfort</h2>
+            <p>Exclusive stays for unforgettable memories</p>
+            <a href="log in.html" class="btn">Get Started</a>
         </div>
-        <br>
-        <a href="log in.html" class="button">Cater to Your Preferences</a>
     </header>
-    <footer>
-        <h4>Contact us at</h4>
-        <div class="social-icons">
-            <a href="https://api.whatsapp.com/send?phone=254115541356"><i class='bx bxl-whatsapp'></i> WhatsApp</a>
-            <a href="https://github.com/kelmasanga"><i class='bx bxl-github'></i> GitHub</a>
-            <a href="mailto:kelmasanga@gmail.com"><i class='bx bx-envelope'></i> Email</a>
-            <a href="https://www.zetech.ac.ke/"><i class='bx bxs-school'></i> Zetech University</a>
+    
+    <section id="services" class="services">
+        <h2>Our Premium Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Spa & Wellness</h3>
+                <p>Relax and rejuvenate with our world-class spa services.</p>
+            </div>
+            <div class="service-box">
+                <h3>Gourmet Dining</h3>
+                <p>Experience fine dining with curated menus from top chefs.</p>
+            </div>
+            <div class="service-box">
+                <h3>Exclusive Suites</h3>
+                <p>Stay in beautifully designed suites with stunning views.</p>
+            </div>
         </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 LuxuryStay. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
