@@ -2,22 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luxury Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-image: url("stunning\ overall\ backdrop.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            top: 0;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: goldenrod;
+            font-size: 18px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            width: 350px;
+            margin-top: 80px;
+        }
+        h2 {
+            color: goldenrod;
+        }
+        .input-box {
+            position: relative;
+            margin: 20px 0;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: goldenrod;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #c4103d;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
     <div class="container">
-        <h2>Register</h2>
-        <form action="auth.php" method="POST">
+        <h2>LUXURNET</h2>
+        <h3>Sign Up</h3>
+        <form action="register.php" method="POST">
             <div class="input-box">
-                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" placeholder="Full Name" required>
             </div>
             <div class="input-box">
-                <input type="password" name="password" placeholder="Password" required>
+                <input type="email" placeholder="Email" required>
             </div>
-            <button type="submit" name="register" class="btn">Sign Up</button>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
         </form>
-        <p>Already have an account? <a href="index.html">Log in</a></p>
+        <p>Already have an account? <a href="log in.html">Log in</a></p>
     </div>
 </body>
 </html>
